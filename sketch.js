@@ -31,7 +31,7 @@ function setup() {
   World.add(world, playerBase);
 
   player = Bodies.rectangle(250, playerBase.position.y - 160, 50, 180, options);
-  World.add(world,player)
+  World.add(world, player)
 
   playerArcher = new PlayerArcher(
     340,
@@ -45,34 +45,34 @@ function draw() {
   background(backgroundImg);
 
   Engine.update(engine);
-  image(baseimage,playerBase.position.x,playerBase.position.y,180,150)
-  image(playerimage,player.position.x,player.position.y,50,180)
+  image(baseimage, playerBase.position.x, playerBase.position.y, 180, 150)
+  image(playerimage, player.position.x, player.position.y, 50, 180)
 
   playerArcher.display();
 
-   // for (var i; i < playerArrows.length; i++) {
-   //   if (playerArrows[i] !== undefined) {
-   //     playerArrows[i].display();
-   //   }
-   // }
+  // for (var i; i < playerArrows.length; i++) {
+  //   if (playerArrows[i] !== undefined) {
+  //     playerArrows[i].display();
+  //   }
+  // }
 
-   // for (var i = 0, i++) {
-   //   if (playerArrows[i] !== undefined) {
-   //     playerArrows[i].display();
-   //   }
-   // }
-  
-   // for (var i = 0; i < playerArrows.length; i++) {
-   //   if (playerArrows[i] !== undefined) {
-   //     playerArrows[i].display();
-   //   }
-   // }
+  // for (var i = 0, i++) {
+  //   if (playerArrows[i] !== undefined) {
+  //     playerArrows[i].display();
+  //   }
+  // }
 
-   // for (var i) {
-   //   if (playerArrows[i] !== undefined) {
-   //     playerArrows[i].display();
-   //   }
-   // }
+  // for (var i = 0; i < playerArrows.length; i++) {
+  //   if (playerArrows[i] !== undefined) {
+  //     playerArrows[i].display();
+  //   }
+  // }
+
+  // for (var i) {
+  //   if (playerArrows[i] !== undefined) {
+  //     playerArrows[i].display();
+  //   }
+  // }
 
   // Título
   fill("#FFFF");
@@ -81,41 +81,41 @@ function draw() {
   text("ARQUEIRO ÉPICO", width / 2, 100);
 }
 
-// function keyPressed() {
-//   if (keyCode === 32) {
-//     var posX = playerArcher.body.position.x;
-//     var posY = playerArcher.body.position.y;
-//     var angle = playerArcher.body.angle;
-//     var arrow = new PlayerArrow(posX, posY, 100, 10, angle);
+function keyPressed() {
+  if (keyCode === 32) {
+    var posX = playerArcher.body.position.x;
+    var posY = playerArcher.body.position.y;
+    var angle = playerArcher.body.angle;
+    var arrow = new PlayerArrow(posX, posY, 100, 10, angle);
 
-//     Matter.Body.setAngle(arrow.body, angle);
-//     playerArrows.push(arrow);
-//   }
-// }
+    Matter.Body.setAngle(arrow.body, angle);
+    playerArrows.push(arrow);
+  }
+}
+
 
 // function keyPressed() {
 //   if (keyCode === 23) {
 //     var posX = playerArcher.body.position.x;
-//     var posY = playerArcher.body.position.y;
+//         var posY = playerArcher.body.position.y;
 //     var angle = playerArcher.body.angle;
 //     var arrow = new PlayerArrow(posX, posY, 100, 10, angle);
-
 //     Matter.Body.setAngle(arrow.body, angle);
 //     playerArrows.push(arrow);
 //   }
 // }
 
-// function keyPressed() {
-//   if (keyCode === 32) {
-//     var posX = playerArcher.body.position.x;
-//     var posY = playerArcher.body.position.y;
-//     var angle = playerArcher.body.angle;
-//     var arrow = new PlayerArrow(posX, posY, 100, 10, angle);
+ function keyPressed() {
+  if (keyCode === 32) {
+    var posX = playerArcher.body.position.x;
+    var posY = playerArcher.body.position.y;
+    var angle = playerArcher.body.angle;
+    var arrow = new PlayerArrow(posX, posY, 100, 10, angle);
 
-//     Matter.Body.setAngle(arrow.body, angle);
-//     playerArrows.push(arrow);
-//   }
-// }
+    Matter.Body.setAngle(arrow.body, angle);
+    playerArrows.push(arrow);
+   }
+ }
 
 // function keyPressed() {
 //   if (keyCode === 32) {
